@@ -1,5 +1,6 @@
 -- CREAR LA BASE DE DATOS
 CREATE DATABASE universidad_db;
+-- USAR LA BASE DE DATOS
 USE universidad_db;
 
 -- TABLA MATERIAS

@@ -1,4 +1,6 @@
+-- CREACÍON DE LA BASE DE DATOS
 CREATE DATABASE control_escolar;
+-- USAR LA BASE DE DATOS
 USE control_escolar;
 -- CREACIÓN DE TABLAS
 CREATE TABLE alumnos (
