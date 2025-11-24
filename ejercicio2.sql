@@ -1,3 +1,15 @@
+/*
+Ejercicio 2: 
+ El departamento académico desea registrar información sobre las materias que se imparten en la universidad y los alumnos que las cursan.
+
+Debes crear una base de datos que permita
+
+Registrar las materias con su clave, nombre y número de créditos.
+
+Registrar los alumnos que cursan alguna materia.
+
+Realizar consultas básicas para obtener información sobre los registros.
+*/
 -- CREAR LA BASE DE DATOS
 CREATE DATABASE universidad_db;
 -- USAR LA BASE DE DATOS
@@ -68,3 +80,17 @@ DELETE FROM alumnos WHERE nombre = 'Sandra Torres';
 SELECT alumnos.nombre AS alumno, materias.nombre AS materia
 FROM alumnos 
 JOIN materias ON alumnos.materia_id = materias.id
+
+/*
+Conceptos clave:
+| Tema                          | Acción                            |
+| ----------------------------- | --------------------------------- |
+| Crear bases de datos y tablas | `CREATE DATABASE`, `CREATE TABLE` |
+| Tipos de datos                | `INT`, `VARCHAR`                  |
+| Insertar datos                | `INSERT INTO ... VALUES`          |
+| Consultar datos               | `SELECT`, `WHERE`, `ORDER BY`     |
+| Modificar datos               | `UPDATE ... SET ... WHERE`        |
+| Eliminar datos                | `DELETE FROM`                     |
+| Contar registros              | `COUNT()`                         |
+| Unir tablas                   | `JOIN`                            |
+*/
