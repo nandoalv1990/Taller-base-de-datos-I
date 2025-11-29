@@ -119,3 +119,13 @@ WHERE id = (
 );
 
 -- PENDIENTE: ESTUDIAR EL MER
+-- TEMAS DEL EJERCICIO
+| Competencia              | Se practica mediante                    |
+| ------------------------ | --------------------------------------- |
+| Llaves foráneas          | `FOREIGN KEY`, `ON DELETE`, `ON UPDATE` |
+| Relaciones 1–N y N–N     | ventas–clientes, ventas–productos       |
+| Modelos entidad–relación | Dibujar el ERD del caso                 |
+| Consultas combinadas     | JOIN múltiples                          |
+| Agregación               | SUM(), GROUP BY                         |
+| Subconsultas             | SELECT dentro de SELECT                 |
+| Lógica de negocio        | Total por venta, productos más vendidos |
