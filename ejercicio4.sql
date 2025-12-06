@@ -118,6 +118,26 @@ FROM alumnos
 LEFT JOIN prestamos ON alumnos.id = prestamos.alumno_id
 GROUP BY alumnos.id;
 
+-- 9. LISTAR TODOS LOS PRÉSTAMOS CON DETALLES COMPLETOS
+SELECT 
+    prestamos.id,
+    alumnos.nombre AS alumno,
+    libros.titulo AS libro,
+    prestamos.fecha_prestamo,
+    prestamos.fecha_devolucion
+FROM prestamos
+INNER JOIN alumnos ON prestamos.alumno_id = alumnos.id
+INNER JOIN libros ON prestamos.libro_id = libros.id;
+
+-- 10. LISTAR LIBROS ACTUALMENTE PRESTADOS (SIN DEVOLVER)
+SELECT 
+    alumnos.nombre AS alumno,
+    libros.titulo AS libro,
+    prestamos.fecha_prestamo
+FROM prestamos
+JOIN alumnos ON prestamos.alumno_id = alumnos.id
+JOIN libros ON prestamos.libro_id = libros.id
+WHERE prestamos.fecha_devolucion IS NULL;
 
 
 
